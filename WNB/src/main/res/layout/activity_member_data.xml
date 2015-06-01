@@ -1,0 +1,368 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.chanxa.wnb.activity.MemberDataActivity">
+
+    <RelativeLayout
+        android:id="@+id/container_memberDataTitle"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_navi"
+        android:layout_height="@dimen/titleHeight">
+
+        <Button
+            android:id="@+id/btn_title_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_back"
+            android:text="返回"
+            android:onClick="backOnclick"
+            android:layout_width="50dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/lable_memberDataTitle"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/img_memberDataUpdata"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/bg_btn_member_data_submit"
+            android:layout_width="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/container_memberDataTitle"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@drawable/bg_edit"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="@string/lable_memberName"
+                    android:layout_width="0dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:textColor="@android:color/black"
+                    android:id="@+id/edit_memberName"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:textSize="14sp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:hint="(输入您的姓名)"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:background="@drawable/bg_edit"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="@string/lable_memberPhone"
+                    android:layout_width="0dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/edit_memberPhone"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:singleLine="true"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:textColor="@android:color/black"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_memberGender"
+                android:background="@drawable/bg_edit"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="@string/lable_memberGender"
+                    android:layout_width="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_memberGender"
+                    android:text="男"
+                    android:layout_marginLeft="95dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text=">"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_memberBirthday"
+                android:background="@drawable/bg_edit"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="@string/lable_memberBirthday"
+                    android:layout_width="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_memberBirthday"
+                    android:layout_marginLeft="95dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text=">"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@drawable/bg_edit"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="@string/lable_memberPersonID"
+                    android:layout_width="0dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_memberPersonID"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:hint="(输入您的身份证号码)"
+                    android:textColor="@android:color/black"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:background="@drawable/bg_edit"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="银行卡号"
+                    android:layout_width="0dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <com.chanxa.wnb.view.BankEditText
+                    android:id="@+id/edit_memberBlankNumber"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:maxLength="24"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:hint="(输入您的银行卡号)"
+                    android:textColor="@android:color/black"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/bg_edit"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="银行户名"
+                    android:layout_width="0dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_blankName"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:hint="(输入您的户名)"
+                    android:textColor="@android:color/black"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_memberBlabk"
+                android:background="@drawable/bg_edit"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="我的银行"
+                    android:layout_width="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_memberBlank"
+                    android:layout_marginLeft="95dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text=">"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+
+            <!--<RelativeLayout
+                android:id="@+id/container_myBank"
+                android:background="@drawable/bg_edit"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:text="@string/lable_memberMyBank"
+                    android:layout_width="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text=">"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>-->
+
+            <com.chanxa.wnb.view.UploadImageView
+                android:id="@+id/photo_member"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/bg_img_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <Button
+                android:id="@+id/btn_loginOut"
+                android:text="退出当前账号"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_btn_reg"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

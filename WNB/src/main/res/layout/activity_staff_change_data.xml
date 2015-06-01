@@ -1,0 +1,199 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context="com.chanxa.wnb.activity.staff.StaffChangeDataActivity">
+
+    <include layout="@layout/default_title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/bg_edit"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="姓名"
+                    android:layout_width="0dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_staffName"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:hint="输入姓名"
+                    android:textColor="@android:color/black"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bg_edit"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="@string/lable_memberPersonID"
+                    android:layout_width="0dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_staffPersonId"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:hint="输入身份证"
+                    android:textColor="@android:color/black"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bg_edit"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="银行卡"
+                    android:layout_width="0dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_staffBankCardNumber"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:hint="输入银行卡账户"
+                    android:textColor="@android:color/black"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/bg_edit"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="开户名"
+                    android:layout_width="0dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content" />
+
+                <EditText
+                    android:id="@+id/edit_staffOpenBankName"
+                    android:layout_weight="2"
+                    android:layout_width="0dp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:hint="输入开户名"
+                    android:textColor="@android:color/black"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_staffBankName"
+                android:background="@drawable/bg_edit"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:paddingLeft="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingRight="20dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:text="开户银行"
+                    android:layout_width="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_staffBlankName"
+                    android:layout_marginLeft="95dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:text=">"
+                    android:textSize="16sp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_staff_changeData"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="确认"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_btn_reg"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

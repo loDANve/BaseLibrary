@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_topic_title"
+            android:layout_width="wrap_content"
+            android:text="问题 1"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/img_ask_correct"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ask_no"
+            android:visibility="invisible"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_topic"
+        android:layout_width="match_parent"
+        android:maxLines="3"
+        android:background="@drawable/bg_topic"
+        android:minLines="3"
+        android:gravity="center"
+        android:text="茉莉花,山顶上什么花?"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:padding="20dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_answer"
+        android:id="@+id/container_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:text="A"
+                android:gravity="center"
+                android:background="@drawable/select_bg_answer"
+                android:button="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioButton
+                android:text="B"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/select_bg_answer"
+                android:button="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:text="C"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/select_bg_answer"
+                android:button="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioButton
+                android:text="D"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:background="@drawable/select_bg_answer"
+                android:button="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RadioGroup>-->
+    </LinearLayout>
+</LinearLayout>

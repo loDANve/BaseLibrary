@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <com.chanxa.wnb.view.SquareRelativeLayout
+        android:layout_width="100dp"
+        android:layout_marginLeft="1dp"
+        android:padding="1dp"
+        android:background="#44bebebe"
+        android:id="@+id/container_img_cart"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:src="@drawable/ic_launcher"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/img_cart" />
+    </com.chanxa.wnb.view.SquareRelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/tv_cartMoney"
+        android:text="但叫撒看到就洒落到街上拉客的叫撒"
+        android:id="@+id/tv_cartName"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/container_img_cart"
+        android:layout_toEndOf="@+id/container_img_cart" />
+
+    <TextView
+        android:layout_marginRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥1000.00"
+        android:singleLine="true"
+        android:textColor="@android:color/holo_red_light"
+        android:id="@+id/tv_cartMoney"
+        android:layout_alignParentRight="true" />
+
+    <com.chanxa.wnb.view.ShopAddSubView
+        android:layout_marginLeft="20dp"
+        android:id="@+id/picker_cart"
+        android:layout_width="106dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/container_img_cart"
+        android:layout_toRightOf="@+id/container_img_cart"
+        android:layout_toEndOf="@+id/container_img_cart" />
+</RelativeLayout>

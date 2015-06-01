@@ -1,0 +1,383 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.chanxa.wnb.activity.MakeDetailsActivity">
+
+    <include layout="@layout/default_title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_alignParentTop="true"
+                    android:id="@+id/img_make"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="110dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:id="@+id/tv_makeName"
+                    android:layout_toRightOf="@+id/img_make"
+                    android:textColor="@android:color/black"
+                    android:text="GBS风暴造型"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="18dp"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@+id/img_make"
+                    android:id="@+id/tv_makeDetails"
+                    android:textColor="@android:color/black"
+                    android:text="洗剪吹25元"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:id="@+id/container_makeArea"
+                    android:layout_below="@+id/tv_makeDetails"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:background="#d6d6d6"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+
+                        <ImageView
+                            android:id="@+id/img_icon_makeDetailsLocation"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_marginBottom="18dp"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/icon_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_detailsAddress"
+                            android:layout_toLeftOf="@+id/tv_line"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@+id/img_icon_makeDetailsLocation"
+                            android:layout_gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_line"
+                            android:layout_toLeftOf="@+id/img_icon_makeDetailsPhone"
+                            android:layout_width="1dp"
+                            android:background="#b5b5b5"
+                            android:layout_height="match_parent" />
+
+                        <ImageView
+                            android:padding="12dp"
+                            android:id="@+id/img_icon_makeDetailsPhone"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            android:src="@drawable/icon_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:background="#b5b5b5"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.chanxa.wnb.view.StretchedListView
+                android:id="@+id/listView_makeDetailsImg"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:id="@+id/container_contactData"
+                android:background="@drawable/bg_edit"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/tv_lable_contactData"
+                    android:textSize="14sp"
+                    android:text="联系信息"
+                    android:textColor="#3e3e3e"
+                    android:layout_marginLeft="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/img_icon_contactName"
+                    android:src="@drawable/make_name"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_lable_contactData"
+                    android:layout_width="24dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="24dp" />
+
+                <TextView
+                    android:singleLine="true"
+                    android:id="@+id/tv_contactName"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@+id/img_icon_contactName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/img_icon_contactPhone"
+                    android:src="@drawable/icon_phone"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tv_contactName"
+                    android:layout_width="20dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_height="20dp" />
+
+                <TextView
+                    android:id="@+id/tv_contactPhone"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:singleLine="true"
+                    android:maxLength="11"
+                    android:layout_toLeftOf="@+id/tv_Instructions1"
+                    android:layout_toRightOf="@+id/img_icon_contactPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_Instructions1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:textSize="16sp"
+                    android:text=">"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/container_makeTime"
+                android:background="@drawable/bg_edit"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:id="@+id/tv_lable_makeTime"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"
+                    android:text="预约时间"
+                    android:textColor="#3e3e3e"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_toRightOf="@+id/tv_lable_makeTime"
+                    android:layout_toLeftOf="@+id/tv_Instructions2"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:text="开始时间"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_makeStartData"
+                            android:layout_marginLeft="10dp"
+                            android:text="               "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_makeStartTime"
+                            android:layout_marginLeft="10dp"
+                            android:text="        "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp">
+
+                        <TextView
+                            android:text="结束时间"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_makeEndData"
+                            android:layout_marginLeft="10dp"
+                            android:text="               "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <TextView
+                            android:id="@+id/tv_makeEndTime"
+                            android:layout_marginLeft="10dp"
+                            android:text="      "
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_Instructions2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:textSize="16sp"
+                    android:text=">"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_makePerson"
+                android:background="@drawable/bg_edit"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:textSize="14sp"
+                    android:text="预约人员"
+                    android:id="@+id/tv_lable_makePerson"
+                    android:layout_centerVertical="true"
+                    android:textColor="#3e3e3e"
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:textColor="#3e3e3e"
+                    android:layout_toRightOf="@+id/tv_lable_makePerson"
+                    android:id="@+id/tv_makePerson"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@+id/tv_right3"
+                    android:singleLine="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tv_right3"
+                    android:layout_marginRight="15dp"
+                    android:textSize="16sp"
+                    android:text=">"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:textColor="@android:color/black"
+                    android:layout_marginLeft="15dp"
+                    android:text="到场人数"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.chanxa.wnb.view.AddSubView
+                    android:id="@+id/numberPicker"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/bg_edit"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edit_makeDetailsRemark"
+                    android:textSize="14sp"
+                    android:padding="5dp"
+                    android:gravity="top"
+                    android:minLines="5"
+                    android:hint="备注"
+                    android:layout_width="match_parent"
+                    android:background="@null"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btn_subMake"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="提交"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/bg_btn_reg"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,213 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/allTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        tools:context="com.chanxa.wnb.activity.staff.StaffStoreMaintenance">
+
+        <RelativeLayout
+            android:id="@+id/Title"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:background="@drawable/bg_navi"
+            android:layout_height="@dimen/titleHeight">
+
+            <Button
+                android:id="@+id/btn_title_back"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/btn_back"
+                android:text="返回"
+                android:onClick="backOnclick"
+                android:layout_width="50dp"
+                android:gravity="right|center"
+                android:paddingRight="10dp"
+                android:textSize="12sp"
+                android:textColor="@android:color/white"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_centerVertical="true"
+                android:layout_centerInParent="true"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:text="店面维护"
+                android:textColor="@android:color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/con_person_layout"
+            android:layout_below="@+id/Title"
+            android:background="@drawable/bg_edit"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:paddingRight="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="联系人"
+                android:layout_width="0dp"
+                android:textSize="17sp"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:id="@+id/contactPerson"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_contactPerson"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:textSize="17sp"
+                android:background="@null"
+                android:singleLine="true"
+                android:textColor="#9d9d9d"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/con_phone_layout"
+            android:layout_below="@+id/con_person_layout"
+            android:background="@drawable/bg_edit"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="50dp">
+
+            <TextView
+                android:text="联系电话"
+                android:layout_width="0dp"
+                android:textSize="17sp"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:id="@+id/contactPhone"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/edit_contactPhone"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:background="@null"
+                android:textSize="14sp"
+                android:singleLine="true"
+                android:textColor="#9d9d9d"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/logoText"
+            android:layout_below="@+id/con_phone_layout"
+            android:text="店铺商标"
+            android:textSize="20sp"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="73dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/logoText"
+            android:layout_below="@+id/con_phone_layout"
+            android:layout_width="100dp"
+            android:id="@+id/logoArea"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="100dp">
+
+            <com.chanxa.wnb.view.UploadImageView
+                android:id="@+id/shopLogo"
+                android:layout_weight="1"
+                android:src="@drawable/defalutlogo"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/container_UploadImageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logoText"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="25dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/plusContainer"
+                android:orientation="vertical"
+                android:layout_width="500dp"
+                android:layout_height="520dp">
+
+                <com.chanxa.wnb.view.UploadImageView
+                    android:id="@+id/img_upLoadHtml"
+                    android:layout_width="500dp"
+                    android:layout_height="500dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/plus_img"/>
+                <TextView
+                    android:text="(店铺图片上传)"
+                    android:id="@+id/message"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/img_upLoadHtml"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_UploadImageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_UploadImageView"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_UploadImageView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/container_UploadImageView2"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:text="确认"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/btn_background"
+            android:layout_width="match_parent"
+            android:layout_height="55dp" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditText">
+        <!-- 每组的长度 -->
+        <attr name="eachLength" format="integer" />
+        <!-- 分隔符 -->
+        <attr name="delimiter" format="string" />
+    </declare-styleable>
+</resources>

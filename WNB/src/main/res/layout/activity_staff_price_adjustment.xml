@@ -1,0 +1,235 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.chanxa.wnb.activity.staff.StaffDataActivity">
+
+    <include layout="@layout/default_title_layout" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/frame">
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/container_staff_changeData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/staff_priceAdjustment_orderNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="订单号"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_staff_priceAdjustment_orderNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/staff_priceAdjustment_orderNum"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:textSize="14sp"
+                    android:text="XXXXXXXXX"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/frame">
+            </View>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/frame">
+            </View>
+
+            <ListView
+                android:id="@+id/listView_staff_priceAdjustment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </ListView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/frame">
+            </View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/frame">
+                </View>
+
+                <RelativeLayout
+                    android:id="@+id/container_staff_changePwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/img_staff_xxx"
+                        android:src="@drawable/icon_staff_changepwd"
+                        android:layout_width="30dp"
+                        android:layout_centerVertical="true"
+                        android:layout_height="30dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img_staff_xxx"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:text="免邮"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:background="@drawable/shape_bg_round_frame">
+
+                        <TextView
+                            android:id="@+id/staff_freight"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:textSize="14sp"
+                            android:text="运费"/>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/staff_freight"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_horizontal">
+                            <TextView
+                                android:id="@+id/tv_staff_freight"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:text="0.00"/>
+                        </LinearLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="@drawable/shape_dotted_line">
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/staff_priceAdjustment_valuationMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="计价方式(￥)"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_staff_priceAdjustment_valuationMode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/staff_priceAdjustment_valuationMode"
+                        android:layout_marginLeft="10dp"
+                        android:text="100 - 10"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/staff_priceAdjustment_actualBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/staff_priceAdjustment_valuationMode"
+                        android:layout_marginTop="10dp"
+                        android:text="实际金额(￥)"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_staff_priceAdjustment_actualBalance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/staff_priceAdjustment_actualBalance"
+                        android:layout_marginLeft="10dp"
+                        android:layout_below="@+id/tv_staff_priceAdjustment_valuationMode"
+                        android:layout_marginTop="10dp"
+                        android:text="100 - 10"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/holo_red_light"/>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="10dp"
+                        android:background="@drawable/shape_bg_round_frame_yellow">
+
+                        <TextView
+                            android:id="@+id/staff_yunfei"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:textSize="14sp"
+                            android:text="一键改价"
+                            android:textColor="#ff8400"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/frame">
+                </View>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_reg"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="确认"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/bg_btn_reg"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

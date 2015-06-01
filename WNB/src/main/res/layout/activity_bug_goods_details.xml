@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.chanxa.wnb.activity.shop.GoodsDetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/container_goodsDetailsTitle"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_navi"
+        android:layout_height="@dimen/titleHeight">
+
+        <ImageView
+            android:id="@+id/tv_back"
+            android:src="@drawable/bg_img_back"
+            android:gravity="center_vertical"
+            android:layout_width="42dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:text="抢购商品"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/container_goodsDetailsTitle"
+        android:layout_above="@+id/container_goodsDetailsSub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_below="@+id/container_goodsDetailsTitle"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <com.chanxa.wnb.view.SquareRelativeLayout
+                android:id="@+id/container_img_goodsDetails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_goodsDetails"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    android:layout_height="match_parent" />
+            </com.chanxa.wnb.view.SquareRelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_goodsDetailsDescription"
+                android:layout_below="@+id/container_img_goodsDetails"
+                android:textSize="16sp"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/container_goodsDetailsNumberPicker"
+                android:layout_below="@+id/tv_goodsDetailsDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_goodsDetailsMoney"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/holo_red_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <WebView
+                android:id="@+id/webview_goodsDetails"
+                android:layout_below="@+id/container_goodsDetailsNumberPicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/container_goodsDetailsSub"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:background="#e5e5e5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/btn_add_shop_cart"
+            android:text="立即抢购"
+            android:background="@drawable/bg_btn_reg"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</RelativeLayout>

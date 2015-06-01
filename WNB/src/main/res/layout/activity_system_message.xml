@@ -1,0 +1,238 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context="com.chanxa.wnb.activity.SystemMessageActivity">
+
+    <include
+        android:id="@+id/systemMessageTitle"
+        layout="@layout/default_title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/wnb_big"
+                android:id="@+id/img_systemMes_wnbLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/img_systemMes_wnbLogo"
+                android:text="v0.9.1"
+                android:textSize="12sp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:id="@+id/container_SystemMessageScore"
+                android:layout_below="@+id/tv_version"
+                android:background="@drawable/bg_edit"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="评分"
+                    android:textColor="#3e3e3e"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:textSize="16sp"
+                    android:text=">"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/container_SystemMessageWelComePage"
+                android:layout_below="@+id/container_SystemMessageScore"
+                android:background="@drawable/bg_edit"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="欢迎页"
+                    android:textColor="#3e3e3e"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:textSize="16sp"
+                    android:text=">"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+         <!--   <RelativeLayout
+                android:id="@+id/container_SystemMessageNotice"
+                android:layout_below="@+id/container_SystemMessageWelComePage"
+                android:background="@drawable/bg_edit"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="系统通知"
+                    android:textColor="#3e3e3e"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:textSize="16sp"
+                    android:text=">"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+-->
+
+            <RelativeLayout
+                android:id="@+id/container_SystemMessageFeedback"
+                android:layout_below="@+id/container_SystemMessageWelComePage"
+                android:background="@drawable/bg_edit"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="帮助反馈"
+                    android:textColor="#3e3e3e"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:textSize="16sp"
+                    android:text=">"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_SystemMessageCheckUpdata"
+                android:layout_below="@+id/container_SystemMessageFeedback"
+                android:background="@drawable/bg_edit"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="检查更新"
+                    android:textColor="#3e3e3e"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:textSize="16sp"
+                    android:text=">"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/container_SystemMessageShareApp"
+                android:layout_below="@+id/container_SystemMessageCheckUpdata"
+                android:background="@drawable/bg_edit"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:textSize="16sp"
+                    android:text="分享应用"
+                    android:textColor="#3e3e3e"
+                    android:layout_marginLeft="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:textSize="16sp"
+                    android:text=">"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/container_SystemMessageShareApp"
+                android:textColor="#050063"
+                android:text="万能宝网络科技股份有限公司版权所有"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:layout_below="@+id/container_SystemMessageShareApp"
+                android:textColor="#050063"
+                android:text="使用条款和隐私政策"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.chanxa.wnb.activity.AskActivity">
+
+    <include layout="@layout/default_title_layout" />
+
+    <ScrollView
+        android:layout_marginTop="@dimen/titleHeight"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:scrollbars="none"
+        android:layout_marginRight="20dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.chanxa.wnb.view.StretchedListView
+                android:id="@+id/list_ask"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:id="@+id/btn_ask_sub"
+                android:background="@drawable/bg_btn_reg"
+                android:text="提交"
+                android:textSize="20sp"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

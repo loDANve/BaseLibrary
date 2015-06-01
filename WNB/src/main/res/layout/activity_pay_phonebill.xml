@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:id="@+id/onLineRootLayout"
+    tools:context="com.chanxa.wnb.activity.OnLineRechargeActivity">
+
+    <include
+        android:id="@+id/onlineRechargeTitle"
+        layout="@layout/default_title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/container_import_phoneNum"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/onlineRechargeTitle"
+        android:background="@drawable/bg_edit"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:maxLength="11"
+            android:id="@+id/et_import_phoneNum"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:background="@null"
+            android:singleLine="true"
+            android:inputType="number"
+            android:layout_marginRight="40dp"
+            android:hint="@string/please_import_phone_num"
+            android:textColor="@android:color/black"/>
+        <Button
+            android:layout_centerVertical="true"
+            android:background="@drawable/clear_edit"
+            android:id="@+id/btn_clear_phone"
+            android:layout_marginLeft="-40dp"
+            android:layout_width="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_height="30dp" />
+        <!--<ImageView
+            android:id="@+id/img_import_phoneNum"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/phone_book"/>-->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/container_ownershipOfLand"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/container_import_phoneNum"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical">
+        
+        <TextView
+            android:id="@+id/tv_ownershipOfLand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="left"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_recharge_amount"
+        android:layout_below="@+id/container_ownershipOfLand"
+        android:background="@drawable/bg_edit"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_recharge_amount"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:background="@null"
+            android:enabled="false"
+            android:text="50"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/tv_recharge_amount"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:background="@null"
+            android:enabled="false"
+            android:text="元"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tv_recharge_products"
+            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:background="@null"
+            android:enabled="false"
+            android:layout_marginRight="40dp"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:text=">"
+            android:textColor="@android:color/black"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_height="fill_parent"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/container_import_pwd"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/container_recharge_amount"
+        android:background="@drawable/bg_edit"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/et_import_pwd"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:background="@null"
+            android:singleLine="true"
+            android:hint="@string/import_pwd"
+            android:password="true"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_immediately_recharge"
+        android:background="@drawable/bg_btn_reg"
+        android:layout_below="@+id/container_import_pwd"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/immediately_recharge"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

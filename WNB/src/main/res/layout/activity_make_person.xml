@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.chanxa.wnb.activity.MakePersonActivity">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_navi"
+        android:layout_height="@dimen/titleHeight">
+
+        <Button
+            android:id="@+id/btn_title_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_back"
+            android:text="返回"
+            android:onClick="backOnclick"
+            android:layout_width="50dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/makeperson"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn_makePerson_sub"
+            android:background="@drawable/bg_btn_shortmsg"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/white"
+            android:text="完成"
+            android:layout_marginRight="10dp"
+            android:layout_width="60dp"
+            android:layout_height="40dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/container_makePerson"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

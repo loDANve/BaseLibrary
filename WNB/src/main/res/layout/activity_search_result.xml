@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e3e3"
+    tools:context="com.chanxa.wnb.activity.shop.SearchResultActivity">
+
+    <RelativeLayout
+        android:id="@+id/container_goodsDetailsTitle"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_navi"
+        android:layout_height="@dimen/titleHeight">
+
+        <ImageView
+            android:id="@+id/tv_back"
+            android:src="@drawable/bg_img_back"
+            android:gravity="center_vertical"
+            android:layout_width="42dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:layout_height="match_parent" />
+
+        <EditText
+            android:layout_toRightOf="@+id/tv_back"
+            android:id="@+id/edit_shop_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/btn_changeLG"
+            android:background="@drawable/search_shop"
+            android:ems="15"
+            android:focusable="false"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+
+        <Button
+            android:background="@drawable/btn_search_lg"
+            android:id="@+id/btn_changeLG"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/container_goodsDetailsTitle"
+        android:layout_height="match_parent">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/listView_searchResult"
+            android:layout_width="match_parent"
+            android:footerDividersEnabled="false"
+            android:layout_height="match_parent" />
+
+        <com.handmark.pulltorefresh.library.PullToRefreshGridView
+            android:id="@+id/gridView_searchResult"
+            android:horizontalSpacing="10dp"
+            android:numColumns="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:verticalSpacing="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</RelativeLayout>

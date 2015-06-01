@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="100dp">
+
+    <TextView
+        android:background="#dcdcdc"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:background="#dcdcdc"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <ImageView
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_centerVertical="true"
+        android:layout_width="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_height="80dp"
+        android:id="@+id/img_item_storelist" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_item_storelist_name"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="3dp"
+        android:textSize="13sp"
+        android:textColor="#303030"
+        android:layout_alignTop="@+id/img_item_storelist"
+        android:layout_toRightOf="@+id/img_item_storelist"
+        android:layout_toEndOf="@+id/img_item_storelist" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:textSize="12sp"
+        android:layout_toRightOf="@+id/img_item_storelist"
+        android:id="@+id/tv_item_storelist_Introduction"
+        android:layout_toLeftOf="@+id/btn_item_storelist_sub"
+        android:layout_centerVertical="true" />
+
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="38dp"
+        android:text="@string/lable_btnsub"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bg_btn_reg"
+        android:id="@+id/btn_item_storelist_sub"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="right"
+        android:layout_height="20dp">
+
+        <ImageView
+            android:id="@+id/icon_location"
+            android:layout_toLeftOf="@+id/tv_item_storelist_distance"
+            android:src="@drawable/icon_location"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:layout_marginLeft="5dp"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tv_item_storelist_distance"
+            android:textSize="10sp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

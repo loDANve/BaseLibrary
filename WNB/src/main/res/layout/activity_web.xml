@@ -1,0 +1,13 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chanxa.wnb.activity.WebActivity">
+
+    <include layout="@layout/default_title_layout" />
+    <com.chanxa.wnb.view.ProgressWebView
+        android:id="@+id/webview"
+        android:layout_marginTop="@dimen/titleHeight"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

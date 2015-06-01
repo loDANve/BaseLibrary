@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chanxa.wnb" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- baiduMap start -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <!-- baiduMap end -->
+    <application
+        android:name=".config.WnbApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_launcher"
+        android:persistent="true"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="DAVDKisGd6DmdwMsumkGrybe" />
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="Wtm.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+
+        <activity
+            android:name=".activity.WelcomeActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.OnLineRechargeWebActivity"
+            android:label="@string/title_activity_test"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.UserRegActivity" />
+        <activity
+            android:name=".activity.LookRecordActivity"
+            android:label="@string/title_activity_look_record"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MemberDataActivity"
+            android:label="@string/title_activity_member_data"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activity.OnLineRechargeActivity"
+            android:label="@string/title_activity_on_line_recharge"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RebateQueryActivity"
+            android:label="@string/title_activity_rebate_query"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CCTransferActivity"
+            android:label="@string/title_activity_cctransfer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyMakeActivity"
+            android:label="@string/title_activity_my_make"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SystemMessageActivity"
+            android:label="@string/title_activity_system_message"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SafetyCenterActivity"
+            android:label="@string/title_activity_safety_center"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ConvenienceServicesActivity"
+            android:label="@string/title_activity_convenience_services"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PayPhoneBillActivity"
+            android:label="@string/title_activity_pay_phonebill"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ChangePwdActivity"
+            android:label="@string/title_activity_change_pwd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GoBackPwdActivity"
+            android:label="@string/title_activity_go_back_pwd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShortMessageVerificationActivity"
+            android:label="@string/title_activity_short_message_verification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MemberShortMessageVerificationActivity"
+            android:label="@string/title_activity_short_message_verification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ProtectionVerificationActivity"
+            android:label="@string/title_activity_protection_verification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SetUpProtectionVerificationActivity"
+            android:label="@string/title_activity_set_up_protection_verification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FeedbackActivity"
+            android:label="@string/title_activity_feedback"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.UserLoginActivity"
+            android:label="@string/title_activity_user_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.WelcomepageActivity" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name=".activity.MakeDetailsActivity"
+            android:label="@string/title_activity_make_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ResetPwdActivity"
+            android:label="@string/title_activity_reset_pwd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.staff.StaffMainActivity"
+            android:label="@string/title_activity_staff_main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.staff.StaffDataActivity"
+            android:label="@string/title_activity_staff_data"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.staff.StaffChangeDataActivity"
+            android:label="@string/title_activity_staff_change_data"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.staff.StaffIdentityActivity"
+            android:label="@string/title_activity_staff_identity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.staff.StaffBalanceQueryActivity"
+            android:label="@string/title_activity_staff_balance_query"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.staff.StaffLookRecordActivity"
+            android:label="@string/title_activity_staff_look_record"
+            android:screenOrientation="portrait" />
+        <activity android:name=".activity.staff.StaffChangePwdActivity" />
+        <activity
+            android:name=".activity.staff.StaffMentionNowActivity"
+            android:label="@string/title_activity_staff_mention_now"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MyBankActivity"
+            android:label="@string/title_activity_my_bank"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".androidService.UpDataDownLoadService" >
+            <intent-filter>
+                <action android:name="appUpdata" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.staff.StaffUpLoadGoodsActivity"
+            android:label="@string/title_activity_staff_up_load_goods"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MentionNowActivity"
+            android:label="@string/title_activity_mention_now"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.CashRebateActivity"
+            android:label="@string/title_activity_mention_now"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.GoodsDetailsActivity"
+            android:label="@string/title_activity_goods_details"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.GoodsSearchActivity"
+            android:label="@string/title_activity_goods_search"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.MallMainActivity"
+            android:label="@string/title_activity_mall_main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.SettlementActivity"
+            android:label="@string/title_activity_settlement"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.OrderListActivity"
+            android:label="@string/title_activity_order_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.EditAddressActivity"
+            android:label="@string/title_activity_edit_address"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.OrderDetailsActivity"
+            android:label="@string/title_activity_order_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.SearchResultActivity"
+            android:label="@string/title_activity_search_result"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.WebActivity"
+            android:label="@string/title_activity_web"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AskActivity"
+            android:label="@string/title_activity_ask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.BugGoodsDetailsActivity"
+            android:label="@string/title_activity_bug_goods_details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.GoodsDetailsListActivity"
+            android:label="@string/title_activity_goods_details_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.StoreGoodsActivity"
+            android:label="@string/title_activity_store_goods"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.ShopEvaluationActivity"
+            android:label="@string/title_activity_shop_evaluation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.MyCollectionListActivity"
+            android:label="@string/title_activity_my_collection_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.MakePersonActivity"
+            android:label="@string/title_activity_make_person" >
+        </activity>
+        <activity
+            android:name=".activity.staff.StaffGoodsManageActivity"
+            android:label="@string/title_activity_staff_goods_manage" >
+        </activity>
+        <activity
+            android:name=".activity.staff.StaffGoodsPreviewActivity"
+            android:label="@string/title_activity_staff_goods_preview" >
+        </activity>
+        <activity
+            android:name=".activity.staff.StaffManageOrderActivity"
+            android:label="@string/title_activity_staff_goods_manage" >
+        </activity>
+        <activity
+            android:name=".activity.staff.StaffOrderDetailActivity"
+            android:label="@string/title_activity_staff_goods_manage" >
+        </activity>
+        <activity
+            android:name=".activity.staff.StaffPriceAdjustmentActivity"
+            android:label="@string/title_activity_staff_goods_manage" >
+        </activity>
+        <activity
+            android:name=".activity.staff.StaffStoreMaintenance"
+            android:label="@string/title_activity_staff_store_maintenance" >
+        </activity>
+    </application>
+
+</manifest>

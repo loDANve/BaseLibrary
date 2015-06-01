@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@drawable/bg_navi"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="@dimen/titleHeight">
+
+
+        <ImageView
+            android:layout_toLeftOf="@+id/tv_search"
+            android:id="@+id/container_toSearch"
+            android:layout_width="match_parent"
+            android:src="@drawable/bg_et_search"
+            android:layout_height="wrap_content" />
+        <!--<LinearLayout
+            android:id="@+id/container_toSearch"
+            android:layout_toLeftOf="@+id/tv_search"
+            android:layout_marginLeft="30dp"
+            android:padding="2dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bg_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/searchico"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="2dp"
+                android:background="@null"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="30dp" />
+        </LinearLayout>-->
+
+        <Button
+            android:background="@drawable/btn_list_or_map"
+            android:id="@+id/tv_search"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:layout_width="60dp"
+            android:onClick="childFragmentSwitch"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/container_storeFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></LinearLayout>
+</LinearLayout>

@@ -1,0 +1,192 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.chanxa.wnb.activity.staff.StaffDataActivity">
+
+    <include layout="@layout/default_title_layout" />
+
+    <RelativeLayout
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/img_staff_photo"
+            android:src="@drawable/staff_photo"
+            android:layout_width="150dp"
+            android:layout_height="150dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:id="@+id/tv_lable_staff_name"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/img_staff_photo"
+            android:layout_toEndOf="@+id/img_staff_photo"
+            android:layout_marginTop="23dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="张三"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_staff_name"
+            android:layout_alignTop="@+id/tv_lable_staff_name"
+            android:layout_toRightOf="@+id/tv_lable_staff_name"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="账号"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/tv_lable_staff_number"
+            android:layout_toRightOf="@id/img_staff_photo"
+            android:layout_marginBottom="23dp"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="18770025698"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_staff_number"
+            android:layout_alignTop="@+id/tv_lable_staff_number"
+            android:layout_toRightOf="@+id/tv_lable_staff_number"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_staff_changeData"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edit"
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:src="@drawable/icon_staff_member"
+            android:layout_width="30dp"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp" />
+        <TextView
+            android:text="修改资料"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:text=">"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_staff_Identity_Authentication"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edit"
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:src="@drawable/icon_staff_camera"
+            android:layout_width="30dp"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp" />
+        <TextView
+            android:text="身份认证"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_staff_camera_iscan"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16sp"
+            android:visibility="invisible"
+            android:textSize="16sp"
+            android:text="已提交审核"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:text=">"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_staff_changePwd"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_edit"
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_height="50dp">
+        <ImageView
+            android:src="@drawable/icon_staff_changepwd"
+            android:layout_width="30dp"
+            android:layout_centerVertical="true"
+            android:layout_height="30dp" />
+        <TextView
+            android:text="修改密码"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:text=">"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_btn_exitLogin"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/bg_btn_reg"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="退出登录"
+            android:textSize="21sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</LinearLayout>

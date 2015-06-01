@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/transparent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.chanxa.wnb.view.SquareRelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/container_imageView3"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@drawable/ic_launcher"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView3"
+            android:background="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal" />
+    </com.chanxa.wnb.view.SquareRelativeLayout>
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New Text"
+        android:id="@+id/textView"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

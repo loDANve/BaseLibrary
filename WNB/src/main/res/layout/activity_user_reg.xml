@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/default_title_layout" />
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:layout_toLeftOf="@+id/btn_getShortMessage"
+            android:id="@+id/edit_shortMessage"
+            android:layout_width="wrap_content"
+            android:background="@drawable/bg_edit"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="16sp"
+            android:maxLength="11"
+            android:textColor="@android:color/black"
+            android:singleLine="true"
+            android:inputType="number"
+            android:hint="11位手机号"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_alignParentRight="true"
+            android:id="@+id/btn_getShortMessage"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"
+            android:text="@string/lable_getShortMessage"
+            android:layout_width="70dp"
+            android:background="@drawable/bg_btn_shortmsg"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edit_phoneCheckCode"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="20dp"
+        android:inputType="text"
+        android:textSize="16sp"
+        android:paddingLeft="20dp"
+        android:textColor="@android:color/black"
+        android:singleLine="true"
+        android:hint="手机验证码"
+        android:background="@drawable/bg_edit"
+        android:layout_marginRight="10dp"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/edit_regPassWord"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="20dp"
+        android:textSize="16sp"
+        android:paddingLeft="20dp"
+        android:textColor="@android:color/black"
+        android:singleLine="true"
+        android:hint="6-32位密码"
+        android:background="@drawable/bg_edit"
+        android:layout_marginRight="10dp"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/edit_recommendNumber"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:paddingRight="20dp"
+        android:textSize="16sp"
+        android:paddingLeft="20dp"
+        android:textColor="@android:color/black"
+        android:singleLine="true"
+        android:hint="推荐会员卡号(无则不填)"
+        android:background="@drawable/bg_edit"
+        android:layout_marginRight="10dp"
+        android:layout_height="50dp" />
+    
+    
+    <Button
+        android:id="@+id/btn_reg"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="注册"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+</LinearLayout>

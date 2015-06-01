@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/container_orderNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/img_staff_orderDetail_itemImg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/tv_staff_orderDetail_itemGoodsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_staff_orderDetail_itemImg"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:text="加瘦T-shirt打底衫"
+            android:singleLine="true"/>
+
+        <!--<TextView
+            android:id="@+id/tv_staff_orderDetail_itemGoodsRemarks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_staff_orderDetail_itemImg"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tv_staff_orderDetail_itemGoodsName"
+            android:textSize="14sp"
+            android:text="超值两件装"
+            android:singleLine="true"/>-->
+
+        <TextView
+            android:id="@+id/tv_staff_orderDetail_itemGoodsPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_staff_orderDetail_itemImg"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/tv_staff_orderDetail_itemGoodsName"
+            android:layout_marginTop="5dp"
+            android:textSize="14sp"
+            android:text="￥100"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/tv_staff_orderDetail_itemGoodsNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/img_staff_orderDetail_itemImg"
+            android:layout_marginLeft="10dp"
+            android:layout_alignBottom="@+id/img_staff_orderDetail_itemImg"
+            android:textSize="14sp"
+            android:text="X2"
+            android:singleLine="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

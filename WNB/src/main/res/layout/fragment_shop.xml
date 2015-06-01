@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.chanxa.wnb.view.PullToRefreshEventScrollView xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/scrollView_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrMode="both">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_marginTop="@dimen/titleHeight"
+                android:layout_width="match_parent"
+                android:layout_height="130dp">
+                <com.daimajia.slider.library.SliderLayout
+                    android:id="@+id/shopBannerSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp" />
+                <com.daimajia.slider.library.Indicators.PagerIndicator
+                    android:id="@+id/custom_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    grid:selected_color="#fff"
+                    grid:selected_height="12dp"
+                    grid:selected_padding_left="3dp"
+                    grid:selected_padding_right="3dp"
+                    grid:selected_width="12dp"
+                    grid:shape="oval"
+                    grid:unselected_color="#33ffffff"
+                    grid:unselected_height="10dp"
+                    grid:unselected_padding_left="3dp"
+                    grid:unselected_padding_right="3dp"
+                    grid:unselected_width="10dp" />
+            </RelativeLayout>
+
+            <com.chanxa.wnb.view.ScrollGridView
+                android:layout_marginTop="10dp"
+                android:id="@+id/shop_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:horizontalSpacing="10dp"
+                android:numColumns="2"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:verticalSpacing="10dp" />
+        </LinearLayout>
+    </com.chanxa.wnb.view.PullToRefreshEventScrollView>
+
+    <RelativeLayout
+        android:id="@+id/container_shopTitle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titleHeight"
+        android:background="@drawable/bg_navi"
+        android:gravity="center_vertical"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp">
+
+        <EditText
+            android:id="@+id/edit_shop_search"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/img_shop_menu"
+            android:background="@drawable/search_shop"
+            android:ems="15"
+            android:focusable="false"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textSize="15sp" />
+       <!-- <TextView
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:text="商城首页"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+        <ImageView
+            android:id="@+id/img_shop_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/shop_menu" />
+
+    </RelativeLayout>
+
+</FrameLayout>

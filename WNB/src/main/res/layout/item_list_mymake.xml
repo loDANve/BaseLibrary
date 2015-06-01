@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/bg_edit"
+    android:layout_width="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_item_mymakeDate"
+        android:text="2014-8-3"
+        android:layout_alignBaseline="@+id/tv_item_mymakeState"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_item_mymakeTime"
+        android:text="11:30"
+        android:layout_alignBaseline="@+id/tv_item_mymakeState"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:drawableRight="@drawable/icon_yes"
+        android:id="@+id/tv_item_mymakeState"
+        android:text="预约成功"
+        android:gravity="center_vertical"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/tv_item_mymakeDate"
+        android:id="@+id/tv_item_mymakeStoreName"
+        android:layout_alignParentBottom="true"
+        android:text="预约H决定书造型开发店"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:textStyle="bold"
+        android:gravity="right"
+        android:layout_alignTop="@+id/tv_item_mymakeStoreName"
+        android:id="@+id/tv_item_mymakePersonName"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="8号造型师"
+        android:textSize="16sp"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/tv_item_mymakeStoreName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

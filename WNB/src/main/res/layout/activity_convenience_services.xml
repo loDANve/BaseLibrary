@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context="com.chanxa.wnb.activity.SafetyCenterActivity">
+
+    <include layout="@layout/default_title_layout"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/container_payPhoneBill"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/pay_phone_bill"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="话费充值"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_online_recharge"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+            <ImageView
+                android:src="@drawable/online_recharge"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="在线充值"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/container_rebate_query"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible">
+
+            <ImageView
+                android:src="@drawable/rebate_query"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="返利查询"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

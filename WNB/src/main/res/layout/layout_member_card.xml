@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_navi"
+        android:layout_height="@dimen/titleHeight">
+
+        <Button
+            android:id="@+id/btn_title_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_back"
+            android:text="返回"
+            android:layout_width="50dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:text="会员"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_bg_QRCode"
+            android:src="@drawable/bg_member_card_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/bg_img_QRCode"
+                android:layout_width="match_parent"
+                android:background="@android:color/white"
+                android:padding="1dp"
+                android:scaleType="fitXY"
+                android:layout_gravity="center"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/img_QRCode"
+                android:layout_width="match_parent"
+                android:padding="1dp"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <!--<ImageView
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/wnb_card"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content" />-->
+
+    <!--<RelativeLayout
+        android:id="@+id/container_memberBarCode"
+        android:background="@drawable/bg_member_barcode"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:id="@+id/img_QRCode"
+            android:src="@drawable/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>-->
+
+</LinearLayout>

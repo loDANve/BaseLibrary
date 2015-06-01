@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_login"
+    android:gravity="center_horizontal"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp"
+    tools:context="com.chanxa.wnb.activity.UserLoginActivity">
+
+    <ImageView
+        android:src="@drawable/wnb_login"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_loginType"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:text="电子商务会员"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_login_edit"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="100dp">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/icon_login_user"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+
+            <TextView
+                android:background="#919292"
+                android:layout_width="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:inputType="number"
+                android:id="@+id/edit_loginName"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:hint="用户名"
+                android:padding="5dp"
+                android:background="@null"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:background="@drawable/clear_edit"
+                android:id="@+id/btn_clear_name"
+                android:layout_marginLeft="-40dp"
+                android:layout_width="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="30dp" />
+
+            <!--<com.chanxa.wnb.view.EraseEditText
+                android:inputType="number"
+                android:id="@+id/edit_loginName"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:hint="用户名"
+                android:padding="5dp"
+                android:background="@null"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>-->
+
+        </LinearLayout>
+
+        <TextView
+            android:background="#919292"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/icon_login_pwd"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:background="#919292"
+                android:layout_width="1dp"
+                android:layout_marginLeft="15dp"
+                android:layout_height="match_parent" />
+
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/edit_loginPwd"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:background="@null"
+                android:hint="密码"
+                android:padding="5dp"
+                android:layout_marginRight="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <Button
+                android:background="@drawable/clear_edit"
+                android:id="@+id/btn_clear_pwd"
+                android:layout_marginLeft="-40dp"
+                android:layout_width="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="30dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="right"
+        android:id="@+id/tv_goBackPwd"
+        android:layout_alignBaseline="@+id/checkbox_RememberPwd"
+        android:layout_alignParentRight="true"
+        android:text="忘记密码"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_marginTop="5dp"
+        android:text="登录"
+        android:background="@drawable/bg_login_btn"
+        android:textSize="22sp"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+    <Button
+        android:id="@+id/btn_reg"
+        android:text="注册"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" />
+
+</LinearLayout>

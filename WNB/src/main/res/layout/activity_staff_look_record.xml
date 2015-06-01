@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.chanxa.wnb.activity.LookRecordActivity">
+
+    <RelativeLayout
+        android:id="@+id/container_myMakeTitle"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_navi"
+        android:layout_height="@dimen/titleHeight">
+
+        <Button
+            android:id="@+id/btn_title_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_back"
+            android:text="返回"
+            android:onClick="backOnclick"
+            android:layout_width="50dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:layout_height="30dp" />
+
+        <ToggleButton
+            android:id="@+id/tog_staffRecordtype"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textOff=""
+            android:textOn=""
+            android:background="@drawable/bg_staff_record"
+            android:textColor="@android:color/white"
+            android:layout_width="150dp"
+            android:checked="true"
+            android:layout_height="30dp" />
+
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_staff_lookRecord"
+        android:layout_below="@+id/container_myMakeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

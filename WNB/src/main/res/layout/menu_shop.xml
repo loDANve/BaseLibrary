@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingRight="5dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_shop_fenlei"
+        android:layout_width="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/menu_shop_fenlei"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_shop_cart"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:background="@drawable/menu_shop_cart"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/tv_shop_member_center"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:background="@drawable/menu_shop_member"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

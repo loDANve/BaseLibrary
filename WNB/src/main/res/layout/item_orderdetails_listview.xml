@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:focusable="false"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_orderGoodsState"
+            android:text="完成"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:layout_toRightOf="@+id/tv_orderGoodsState"
+
+            android:id="@+id/tv_orderGoodsNumber"
+            android:text="订单号: 165456454"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+       <!-- <ImageView
+            android:id="@+id/img_deleteOrderGoods"
+            android:layout_centerVertical="true"
+            android:src="@drawable/delete"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />-->
+
+    </RelativeLayout>
+
+    <TextView
+        android:background="#ececec"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/container_orderListGoodsOne"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:background="#ececec"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_OrderListMoney"
+            android:text="实付款: ￥100.00"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+       <!-- <Button
+            android:visibility="invisible"
+            android:background="@drawable/bg_again_buy"
+            android:text="再次购买"
+            android:textColor="#df0c0c"
+            android:layout_alignParentRight="true"
+            android:layout_width="120dp"
+            android:layout_height="40dp" />-->
+    </RelativeLayout>
+</LinearLayout>

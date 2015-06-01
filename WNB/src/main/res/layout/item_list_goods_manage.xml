@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="100dp">
+
+    <com.chanxa.wnb.view.SquareRelativeLayout
+        android:layout_width="100dp"
+        android:layout_marginLeft="1dp"
+        android:padding="1dp"
+        android:background="#44bebebe"
+        android:id="@+id/container_img_item_goods_manage"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:src="@drawable/ic_launcher"
+            android:background="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:id="@+id/img_item_goods_manage" />
+    </com.chanxa.wnb.view.SquareRelativeLayout>
+
+  <!--  <ImageView
+        android:scaleType="fitCenter"
+        android:id="@+id/img_item_goods_manage"
+        android:src="@drawable/ic_launcher"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />-->
+
+    <TextView
+        android:text="wqe321312321"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="3"
+        android:layout_toRightOf="@+id/container_img_item_goods_manage"
+        android:id="@+id/tv_item_goods_manage_goodsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="wqe321312321"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_item_goods_manage_goodsName"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/container_img_item_goods_manage"
+        android:id="@+id/tv_item_goods_manage_goodsMoney"
+        android:textColor="@android:color/holo_red_light"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="80dp"
+        android:layout_height="100dp">
+
+        <TextView
+            android:text=">"
+            android:id="@+id/tv_right"
+            android:layout_marginRight="10dp"
+            android:gravity="center_vertical|right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+</RelativeLayout>

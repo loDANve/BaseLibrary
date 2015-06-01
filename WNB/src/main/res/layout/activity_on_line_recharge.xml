@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:id="@+id/onLineRootLayout"
+    tools:context="com.chanxa.wnb.activity.OnLineRechargeActivity">
+
+    <include
+        android:id="@+id/onlineRechargeTitle"
+        layout="@layout/default_title_layout" />
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/onlineRechargeTitle"
+        android:id="@+id/container_onlineCardNumber"
+        android:background="@drawable/bg_edit"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:text="@string/lable_CardNumber"
+            android:layout_width="56sp"
+            android:textSize="14sp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:gravity="center_vertical"
+            android:textSize="14sp"
+            android:id="@+id/tv_onlineCardNumber"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:singleLine="true"
+            android:enabled="false"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/container_onlineCardNumber"
+        android:id="@+id/container_onlineRechargeMoney"
+        android:background="@drawable/bg_edit"
+        android:layout_marginTop="15dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_height="50dp">
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:text="@string/lable_RechargeMoney"
+            android:layout_width="56sp"
+            android:textSize="14sp"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:textSize="14sp"
+            android:id="@+id/edit_onlineRechargeMoney"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:hint="请输入"
+            android:singleLine="true"
+            android:inputType="number"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_methodsOfPayment"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/container_onlineRechargeMoney"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_bank"
+        android:orientation="vertical"
+        android:layout_height="180dp">
+
+        <TextView
+            android:text="@string/lable_methodsOfPayment"
+            android:paddingLeft="20dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:background="#afafaf"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="130dp">
+
+            <LinearLayout
+                android:background="@drawable/div_recharge"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/container_unionPay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_unionPay"
+                    android:src="@drawable/unionpay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="@drawable/div_recharge"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:id="@+id/container_alipay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_alipay"
+                    android:src="@drawable/alipay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:background="@drawable/bg_btn_reg"
+        android:layout_below="@+id/container_methodsOfPayment"
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/determine"
+        android:layout_height="50dp" />
+
+</RelativeLayout>

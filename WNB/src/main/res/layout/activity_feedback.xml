@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context="com.chanxa.wnb.activity.FeedbackActivity">
+
+    <include layout="@layout/default_title_layout" />
+
+    <EditText
+        android:id="@+id/edit_sendMessage"
+        android:background="@drawable/bg_bank"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="10dp"
+        android:minLines="10"
+        android:textSize="14sp"
+        android:gravity="top"
+        android:hint="感谢您对万能宝的支持,请提出您宝贵的意见....."
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn_sendMessage"
+        android:text="发送"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_btn_reg"
+        android:layout_width="150dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_height="55dp" />
+
+</LinearLayout>

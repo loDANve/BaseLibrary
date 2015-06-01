@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <ImageView
+        android:id="@+id/img_sub"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="40dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/edit_number"
+            android:layout_gravity="center_vertical"
+            android:text="1"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:textSize="20sp"
+            android:maxLength="2"
+            android:editable="false"
+            android:textColor="#6a6a6a"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:gravity="center_horizontal"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_alignParentBottom="true"
+            android:background="#939393"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_add"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

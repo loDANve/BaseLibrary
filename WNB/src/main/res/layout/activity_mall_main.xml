@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chanxa.wnb.activity.shop.MallMainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/container_mallTab"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="61dp"
+        android:layout_height="match_parent"></LinearLayout>
+    <TextView
+        android:background="#d4d5d5"
+        android:layout_marginBottom="@dimen/titleHeight"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="@dimen/titleHeight">
+
+        <RelativeLayout
+            android:background="@android:color/white"
+            android:id="@+id/container_fenleiTab"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tab_fenlei"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:textColor="@drawable/tvcolor_tab_shop"
+                android:text="分类"
+                android:layout_marginBottom="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@android:color/white"
+            android:id="@+id/container_cartTab"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tab_cart"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:textColor="@drawable/tvcolor_tab_shop"
+                android:text="购物车"
+                android:layout_marginBottom="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:background="@android:color/white"
+            android:id="@+id/container_memberCenterTab"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/tab_member_center"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:textColor="@drawable/tvcolor_tab_shop"
+                android:text="个人中心"
+                android:layout_marginBottom="3dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chanxa.wnb.activity.shop.GoodsDetailsListActivity">
+
+    <RelativeLayout
+        android:id="@+id/container_goodsDetailsListTitle"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_navi"
+        android:layout_height="@dimen/titleHeight">
+
+        <ImageView
+            android:id="@+id/tv_back"
+            android:src="@drawable/bg_img_back"
+            android:gravity="center_vertical"
+            android:layout_width="42dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:text="商品清单"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView_goodsDetails"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

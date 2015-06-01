@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+<!--
+    <string-array ignore="MissingTranslation" name="functionListLabel">
+        <item>会员信息</item>
+        <item>在线充值</item>
+        <item>返利查询</item>
+        <item>卡卡转账</item>
+        <item>我的预约</item>
+        <item>游戏中心</item>
+        <item>安全中心</item>
+        <item>系统信息</item>
+    </string-array>
+-->
+
+    <string-array name="year">
+        <item>2014年</item>
+        <item>2015年</item>
+        <item>2016年</item>
+        <item>2017年</item>
+        <item>2018年</item>
+        <item>2019年</item>
+        <item>2020年</item>
+        <item>2021年</item>
+        <item>2022年</item>
+        <item>2023年</item>
+        <item>2024年</item>
+        <item>2025年</item>
+        <item>2026年</item>
+        <item>2027年</item>
+        <item>2028年</item>
+        <item>2029年</item>
+        <item>2030年</item>
+    </string-array>
+    <string-array name="month">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+
+
+    <string-array name="makeTime">
+        <item>00.00</item>
+        <item>00.30</item>
+        <item>01.00</item>
+        <item>01.30</item>
+        <item>02.00</item>
+        <item>02.30</item>
+        <item>03.00</item>
+        <item>03.30</item>
+        <item>04.00</item>
+        <item>04.30</item>
+        <item>05.00</item>
+        <item>05.30</item>
+        <item>06.00</item>
+        <item>06.30</item>
+        <item>07.00</item>
+        <item>07.30</item>
+        <item>08.00</item>
+        <item>08.30</item>
+        <item>09.00</item>
+        <item>09.30</item>
+        <item>10.00</item>
+        <item>10.30</item>
+        <item>11.00</item>
+        <item>11.30</item>
+        <item>12.00</item>
+        <item>12.30</item>
+        <item>13.00</item>
+        <item>13.30</item>
+        <item>14.00</item>
+        <item>14.30</item>
+        <item>15.00</item>
+        <item>15.30</item>
+        <item>16.00</item>
+        <item>16.30</item>
+        <item>17.00</item>
+        <item>17.30</item>
+        <item>18.00</item>
+        <item>18.30</item>
+        <item>19.00</item>
+        <item>19.30</item>
+        <item>20.00</item>
+        <item>20.30</item>
+        <item>21.00</item>
+        <item>21.30</item>
+        <item>22.00</item>
+        <item>22.30</item>
+        <item>23.00</item>
+        <item>23.30</item>
+    </string-array>
+
+    <string-array name="bankNameArr">
+        <item>中国工商银行</item>
+        <item>中国银行</item>
+        <item>中国建设银行</item>
+        <item>中国农业银行</item>
+        <item>中国交通银行</item>
+        <item>中国邮政银行</item>
+        <item>中国招商银行</item>
+        <item>中国兴业银行</item>
+        <item>中国中信银行</item>
+        <item>中国光大银行</item>
+        <item>中国民生银行</item>
+        <item>中国广发银行</item>
+        <item>中国华夏银行</item>
+        <item>中国浦发银行</item>
+        <item>深圳发展银行</item>
+    </string-array>
+</resources>

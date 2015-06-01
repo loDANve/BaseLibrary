@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/img_item_myCollection"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_launcher"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/tv_item_myCollection_goodsName"
+        android:layout_toRightOf="@+id/img_item_myCollection"
+        android:text="到静安寺将的快乐撒娇的快速将阿里"
+        android:layout_marginRight="25dp"
+        android:maxLines="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_item_myCollection_goodsName"
+        android:textColor="@android:color/holo_red_light"
+        android:id="@+id/tv_item_myCollection_goodsMoney"
+        android:layout_toRightOf="@+id/img_item_myCollection"
+        android:text="¥500"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text=">"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

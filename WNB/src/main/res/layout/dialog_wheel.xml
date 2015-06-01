@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@drawable/bg_dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:id="@+id/btn_wheel_positive"
+            android:layout_centerVertical="true"
+            android:text="确认"
+            android:background="@drawable/bg_fillet"
+            android:layout_marginLeft="20dp"
+            android:layout_width="50dp"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_height="30dp" />
+
+        <Button
+            android:id="@+id/btn_wheel_negative"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="取消"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:background="@drawable/bg_fillet"
+            android:layout_width="50dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:paddingTop="5dp"
+        android:paddingRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="7dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_wheel"
+        android:layout_height="150dp">
+
+        <!--<com.chanxa.wnb.view.wheel.WheelView
+            android:id="@+id/wheelView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />-->
+
+
+        <com.chanxa.wnb.view.wheelView.WheelView
+            android:id="@+id/wheelView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

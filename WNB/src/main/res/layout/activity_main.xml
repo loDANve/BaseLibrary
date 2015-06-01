@@ -1,0 +1,75 @@
+<!--<com.chanxa.wnb.view.SlidingView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:scrollbars="none"
+    android:id="@+id/slidingmenuMain"
+    android:layout_alignParentTop="true"
+    android:layout_width="match_parent"
+    android:layout_above="@+id/container_mainTab"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_member_card" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/container_mainTab"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="@dimen/titleHeight">
+
+                <Button
+                    android:id="@+id/container_homeTab"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:onClick="tabChang"
+                    android:background="@drawable/tab_home"
+                    android:layout_height="wrap_content"></Button>
+
+                <Button
+                    android:background="@drawable/shop_home"
+                    android:id="@+id/container_shopTab"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:onClick="tabChang"
+                    android:layout_height="wrap_content"></Button>
+
+
+                <Button
+                    android:background="@drawable/tab_store"
+                    android:onClick="tabChang"
+                    android:id="@+id/container_storeTab"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"></Button>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_alignParentTop="true"
+                android:id="@+id/container_homeFragment"
+                android:layout_above="@+id/container_mainTab"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="match_parent"></LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</com.chanxa.wnb.view.SlidingView>-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.chanxa.wnb.view.ViewPagerCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/viewpager_main" />
+</RelativeLayout>
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/erase_editText"
+        android:background="@null"
+        android:layout_toLeftOf="@+id/btn_clear"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:background="@drawable/clear_edit"
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

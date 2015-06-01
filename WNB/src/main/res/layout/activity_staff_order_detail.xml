@@ -1,0 +1,278 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.chanxa.wnb.activity.staff.StaffDataActivity">
+
+    <include layout="@layout/default_title_layout" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/container_staff_changeData"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="完成"
+                    android:textSize="14sp"/>
+                <TextView
+                    android:id="@+id/tv_staff_orderDetail_orderNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="订单号:XXXXXXX"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/container_staff_Identity_Authentication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/white"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true">
+
+                        <ImageView
+                            android:id="@+id/img_staff_orderDetail_user"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/staff_order_detail_user"/>
+
+                        <TextView
+                            android:id="@+id/tv_staff_orderDetail_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/img_staff_orderDetail_user"
+                            android:layout_marginLeft="20dp"
+                            android:layout_centerVertical="true"
+                            android:text="张三"
+                            android:textSize="14sp"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true">
+
+                        <ImageView
+                            android:id="@+id/img_staff_orderDetail_phone"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/staff_order_detail_phone"/>
+
+                        <TextView
+                            android:id="@+id/tv_staff_orderDetail_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/img_staff_orderDetail_phone"
+                            android:layout_marginLeft="20dp"
+                            android:layout_centerVertical="true"
+                            android:text="18888888888"
+                            android:textSize="14sp"/>
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <ImageView
+                        android:id="@+id/img_staff_orderDetail_coordinate"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/staff_order_detail_coordinate"/>
+
+                    <TextView
+                        android:id="@+id/tv_staff_orderDetail_coordinate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/img_staff_orderDetail_coordinate"
+                        android:layout_marginLeft="20dp"
+                        android:layout_centerVertical="true"
+                        android:text="广东省,深圳市,福田区,XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+                        android:textSize="14sp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listView_staff_orderDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+            </ListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:background="@android:color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="运输方式"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_staff_orderDetail_transportModes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="货运"
+                        android:textSize="14sp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="商品总额"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_staff_orderDetail_sumPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="￥10000"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/holo_red_light"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentLeft="true"
+                        android:text="运费"
+                        android:textSize="14sp"/>
+
+                    <TextView
+                        android:id="@+id/tv_staff_orderDetail_freight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:text="￥200"
+                        android:textSize="14sp"
+                        android:textColor="@android:color/holo_red_light"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tv_staff_orderDetail_orderFinalSum"
+                    android:layout_marginRight="10dp"
+                    android:text="总计:"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/tv_staff_orderDetail_orderFinalSum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:text="￥10200"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/holo_red_light"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+
+                        android:text="取消订单"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/bg_btn_reg"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_weight="1">
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:text="取消订单"
+                        android:textSize="20sp"
+                        android:textColor="@android:color/white"
+                        android:background="@drawable/bg_btn_reg"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

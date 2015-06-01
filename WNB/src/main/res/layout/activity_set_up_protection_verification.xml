@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.chanxa.wnb.activity.ProtectionVerificationActivity">
+
+
+    <include layout="@layout/default_title_layout" />
+
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:text="问题："
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:text="1、输入您母亲的姓名"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="1-19个中文或3-38个英文"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edit"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:text="2、输入您父亲的姓名"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="1-19个中文或3-38个英文"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edit"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_marginLeft="30dp"
+        android:textSize="16sp"
+        android:layout_marginTop="15dp"
+        android:text="3、输入您配偶的姓名"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:hint="1-19个中文或3-38个英文"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textSize="14sp"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_edit"
+        android:layout_height="40dp" />
+
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="确认"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+</LinearLayout>

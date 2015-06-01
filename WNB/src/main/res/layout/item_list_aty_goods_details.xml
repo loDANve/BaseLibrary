@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="120dp">
+
+    <com.chanxa.wnb.view.SquareRelativeLayout
+        android:layout_width="100dp"
+        android:id="@+id/container_imageView1"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView1"
+            android:background="@android:color/white"
+            android:src="@drawable/ic_launcher"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal" />
+    </com.chanxa.wnb.view.SquareRelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_money"
+            android:layout_width="wrap_content"
+            android:text="$400"
+            android:layout_alignParentRight="true"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_goodsName"
+            android:layout_width="wrap_content"
+            android:text="的撒旦撒旦撒旦撒"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/tv_Number"
+            android:layout_toLeftOf="@+id/tv_money"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_Number"
+            android:layout_alignParentBottom="true"
+            android:text="x5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

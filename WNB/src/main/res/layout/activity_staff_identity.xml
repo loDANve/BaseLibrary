@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical"
+    tools:context="com.chanxa.wnb.activity.staff.StaffIdentityActivity">
+
+    <include layout="@layout/default_title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/container_sfz_Positive"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.chanxa.wnb.view.UploadImageView
+            android:id="@+id/img_upLoadSfz_Positive"
+            android:src="@drawable/photo_identity"
+            android:layout_width="230dp"
+            android:layout_height="180dp" />
+
+        <TextView
+            android:id="@+id/tv_lable_sfz_Positive"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="身份证正面拍照"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_sfz_Back"
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.chanxa.wnb.view.UploadImageView
+            android:id="@+id/img_upLoadSfz_Back"
+            android:src="@drawable/photo_identity"
+            android:layout_width="230dp"
+            android:layout_height="180dp" />
+
+        <TextView
+            android:id="@+id/tv_lable_sfz_Back"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="身份证背面拍照"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_uploadsfz"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="上传"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.chanxa.wnb.activity.ResetPwdActivity">
+
+    <include layout="@layout/default_title_layout" />
+
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:background="@drawable/bg_edit"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="密码"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:layout_marginLeft="32sp"
+            android:hint="输入密码"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="5"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/bg_edit"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="50dp">
+
+        <TextView
+            android:text="确认密码"
+            android:layout_marginLeft="20dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="再次输入密码"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="5"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="确认"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_btn_reg"
+        android:layout_width="match_parent"
+        android:layout_height="55dp" />
+</LinearLayout>

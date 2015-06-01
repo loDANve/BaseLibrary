@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.chanxa.wnb.activity.LookRecordActivity">
+
+    <RelativeLayout
+        android:id="@+id/container_myMakeTitle"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_navi"
+        android:layout_height="@dimen/titleHeight">
+
+        <Button
+            android:id="@+id/btn_title_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_back"
+            android:text="返回"
+            android:onClick="backOnclick"
+            android:layout_width="50dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/lable_myMake"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <!--<RelativeLayout
+            android:id="@+id/btn_lookRecordMonthChoose"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_btn_month"
+            android:layout_height="match_parent">
+            <ImageView
+                android:src="@drawable/bg_btn_monthchoose"
+                android:layout_width="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container_makeContent"
+        android:layout_below="@+id/container_myMakeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:dividerHeight="15dp"
+            android:divider="@android:color/transparent"
+            android:id="@+id/listview_myMake"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:scrollbars="none"
+            android:listSelector="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:headerDividersEnabled="true"
+            android:footerDividersEnabled="true"
+            android:layout_height="match_parent"></com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_alignTop="@+id/listview_myMake"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</RelativeLayout>

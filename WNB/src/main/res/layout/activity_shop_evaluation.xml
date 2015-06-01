@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f4f5f6"
+    tools:context="com.chanxa.wnb.activity.shop.ShopEvaluationActivity">
+
+    <RelativeLayout
+        android:id="@+id/container_goodsDetailsTitle"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_navi"
+        android:layout_height="@dimen/titleHeight">
+
+        <ImageView
+            android:id="@+id/tv_back"
+            android:src="@drawable/bg_img_back"
+            android:gravity="center_vertical"
+            android:layout_width="42dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="20dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:text="评价"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:background="#e1e2e3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <EditText
+                android:padding="10dp"
+                android:gravity="top"
+                android:hint="感谢您对万能宝的支持，请做出您的评价"
+                android:background="@android:color/white"
+                android:minLines="8"
+                android:textSize="14sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:background="#e1e2e3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/settlement"
+                android:textColor="@android:color/white"
+                android:text="提交"
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

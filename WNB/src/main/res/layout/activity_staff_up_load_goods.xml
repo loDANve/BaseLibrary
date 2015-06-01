@@ -1,0 +1,239 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg"
+    tools:context="com.chanxa.wnb.activity.staff.StaffUpLoadGoodsActivity">
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_navi"
+        android:layout_height="@dimen/titleHeight">
+
+        <Button
+            android:id="@+id/btn_title_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/btn_back"
+            android:text="返回"
+            android:onClick="backOnclick"
+            android:layout_width="50dp"
+            android:gravity="right|center"
+            android:paddingRight="10dp"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_centerVertical="true"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_upGoodsPreview"
+            android:text="预览"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.chanxa.wnb.view.UploadImageView
+                android:id="@+id/upImg_goods"
+                android:layout_marginTop="20dp"
+                android:layout_width="120dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/bg_img_photo"
+                android:layout_height="120dp" />
+
+            <EditText
+                android:id="@+id/edit_goodsName"
+                android:background="@drawable/bg_edit"
+                android:layout_width="match_parent"
+                android:hint="输入名称"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:layout_margin="20dp"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:id="@+id/edit_goodsMoney"
+                android:background="@drawable/bg_edit"
+                android:layout_width="match_parent"
+                android:hint="输入价格"
+                android:numeric="decimal"
+                android:maxLength="15"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_height="50dp" />
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/container_SystemMessageScore"
+                android:background="@drawable/bg_edit"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:layout_height="50dp">
+
+                    <TextView
+                        android:textSize="16sp"
+                        android:text="商品类别"
+                        android:textColor="#3e3e3e"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/tv_goodsType"
+                        android:layout_marginRight="40dp"
+                        android:textSize="16sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_marginRight="20dp"
+                        android:textSize="16sp"
+                        android:text=">"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/edit_goodsBarCode"
+                android:background="@drawable/bg_edit"
+                android:layout_width="match_parent"
+                android:hint="输入条码"
+                android:paddingLeft="20dp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:layout_margin="20dp"
+                android:layout_height="50dp" />
+
+            <EditText
+                android:id="@+id/edit_goodsReMark"
+                android:background="@drawable/bg_edit"
+                android:layout_width="match_parent"
+                android:hint="备注"
+                android:minLines="5"
+                android:paddingLeft="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:singleLine="false"
+                android:gravity="top|left"
+                android:textSize="16sp"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:text="是否线上订购"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <com.chanxa.wnb.view.switchbutton.SwitchButton
+                    android:id="@+id/switch_isOnlineOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/container_UploadImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/container_goodsDescription"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.chanxa.wnb.view.UploadImageView
+                    android:id="@+id/img_upLoadHtml"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/bg_img_photo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_UploadImageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/container_UploadImageView"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"></LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/container_UploadImageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/container_UploadImageView"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"></LinearLayout>
+
+            <Button
+                android:layout_marginTop="20dp"
+                android:id="@+id/btn_subGoods"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="上传"
+                android:textSize="20sp"
+                android:layout_marginBottom="20dp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_btn_reg"
+                android:layout_width="match_parent"
+                android:layout_height="55dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
