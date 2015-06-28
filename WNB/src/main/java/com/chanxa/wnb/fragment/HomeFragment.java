@@ -22,6 +22,7 @@ import com.chanxa.wnb.activity.RebateQueryActivity;
 import com.chanxa.wnb.activity.SafetyCenterActivity;
 import com.chanxa.wnb.activity.SystemMessageActivity;
 import com.chanxa.wnb.activity.WebActivity;
+import com.chanxa.wnb.activity.airticket.AirTicketMainActivity;
 import com.chanxa.wnb.activity.shop.GoodsDetailsActivity;
 import com.chanxa.wnb.activity.shop.StoreGoodsActivity;
 import com.chanxa.wnb.bean.Advertising;
@@ -88,6 +89,9 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
         rootView.findViewById(R.id.container_safety_center).setOnClickListener(this);   //安全中心
         rootView.findViewById(R.id.container_system_message).setOnClickListener(this);  //系统消息
         rootView.findViewById(R.id.container_convenience_services).setOnClickListener(this);  //便民服务
+        rootView.findViewById(R.id.container_airticket).setOnClickListener(this);  //机票
+        rootView.findViewById(R.id.container_traintickets).setOnClickListener(this);  //火车票
+        rootView.findViewById(R.id.container_hotel).setOnClickListener(this);  //酒店预订
         img_goLookRecord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -290,6 +294,15 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
                 intent.setClass(getActivity(), SystemMessageActivity.class);
                 break;
             case R.id.container_convenience_services:
+                intent.setClass(getActivity(), PayPhoneBillActivity.class);
+                break;
+            case R.id.container_airticket:
+                intent.setClass(getActivity(), AirTicketMainActivity.class);
+                break;
+            case R.id.container_traintickets:
+                intent.setClass(getActivity(), PayPhoneBillActivity.class);
+                break;
+            case R.id.container_hotel:
                 intent.setClass(getActivity(), PayPhoneBillActivity.class);
                 break;
             case R.id.img_toggle:

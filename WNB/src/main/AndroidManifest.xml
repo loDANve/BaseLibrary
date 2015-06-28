@@ -316,6 +316,15 @@
             android:name=".activity.staff.StaffStoreMaintenance"
             android:label="@string/title_activity_staff_store_maintenance" >
         </activity>
+
+        <!-- 机票 -->
+        <activity
+            android:name=".activity.airticket.AirTicketMainActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+        </activity>
+        <!-- 火车票 -->
+        <!-- 酒店预订 -->
     </application>
 
 </manifest>
