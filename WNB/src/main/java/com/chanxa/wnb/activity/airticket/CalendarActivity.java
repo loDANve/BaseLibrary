@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.chanxa.wnb.R;
 import com.chanxa.wnb.activity.base.WnbBaseActivity;
+import com.chanxa.wnb.fragment.airticket.CalendarPriceFragment;
 import com.chanxa.wnb.fragment.airticket.InternationalFragment;
 import com.chanxa.wnb.fragment.airticket.OneWayFragment;
 import com.chanxa.wnb.fragment.airticket.ReturnFragment;
@@ -23,7 +24,7 @@ import java.util.ArrayList;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-public class AirTicketMainActivity extends WnbBaseActivity {
+public class CalendarActivity extends WnbBaseActivity {
     @InjectView(R.id.btn_title_back)
     protected Button btn_title_back;
     @InjectView(R.id.tv_title)
@@ -34,39 +35,33 @@ public class AirTicketMainActivity extends WnbBaseActivity {
     protected ImageButton btn_return;
     @InjectView(R.id.btn_international)
     protected ImageButton btn_international;
-    @InjectView(R.id.vp_airticket_context)
-    protected ViewPagerCompat viewpager_airticket;
+    @InjectView(R.id.vp_calendar_context)
+    protected ViewPagerCompat viewpager_calendar;
 
-    private OneWayFragment oneWayFragment;
-    private ReturnFragment returnFragment;
-    private InternationalFragment internationalFragment;
+    private CalendarPriceFragment calendarPriceFragment;
     private ArrayList<BaseFragment> fragmentList;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_airticket_main);
+        setContentView(R.layout.activity_calendar_main);
     }
 
     @Override
     public void initView() {
         ButterKnife.inject(this);
-        tv_title.setText("机票搜索");
+        tv_title.setText("日历");
         btn_title_back.setOnClickListener(this);
         btn_oneway.setOnClickListener(this);
         btn_return.setOnClickListener(this);
         btn_international.setOnClickListener(this);
 
-        oneWayFragment = OneWayFragment.getInstance();
-        returnFragment = ReturnFragment.getInstance();
-        internationalFragment = InternationalFragment.getInstance();
+        calendarPriceFragment = CalendarPriceFragment.getInstance();
         fragmentList = new ArrayList<BaseFragment>();
-        fragmentList.add(oneWayFragment);
-        fragmentList.add(returnFragment);
-        fragmentList.add(internationalFragment);
-        viewpager_airticket.setAdapter(new AirTicketFragmentPagerAdapter(getSupportFragmentManager()));
-        viewpager_airticket.setOnPageChangeListener(new AirTicketOnPageChangeListener());
+        fragmentList.add(calendarPriceFragment);
+        viewpager_calendar.setAdapter(new CalendarFragmentPagerAdapter(getSupportFragmentManager()));
+        viewpager_calendar.setOnPageChangeListener(new CalendarPriceOnPageChangeListener());
         super.initView();
     }
 
@@ -81,13 +76,13 @@ public class AirTicketMainActivity extends WnbBaseActivity {
                 finish();
                 break;
             case R.id.btn_oneway:
-                viewpager_airticket.setCurrentItem(0);
+                viewpager_calendar.setCurrentItem(0);
                 break;
             case R.id.btn_return:
-                viewpager_airticket.setCurrentItem(1);
+                viewpager_calendar.setCurrentItem(1);
                 break;
             case R.id.btn_international:
-                viewpager_airticket.setCurrentItem(2);
+                viewpager_calendar.setCurrentItem(2);
                 break;
         }
     }
@@ -117,9 +112,9 @@ public class AirTicketMainActivity extends WnbBaseActivity {
         super.onDestroy();
     }
 
-    private class AirTicketFragmentPagerAdapter extends FragmentPagerAdapter {
+    private class CalendarFragmentPagerAdapter extends FragmentPagerAdapter {
 
-        public AirTicketFragmentPagerAdapter(FragmentManager fm) {
+        public CalendarFragmentPagerAdapter(FragmentManager fm) {
             super(fm);
         }
 
@@ -134,7 +129,7 @@ public class AirTicketMainActivity extends WnbBaseActivity {
         }
     }
 
-    private class AirTicketOnPageChangeListener implements ViewPager.OnPageChangeListener{
+    private class CalendarPriceOnPageChangeListener implements ViewPager.OnPageChangeListener{
 
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {

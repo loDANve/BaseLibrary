@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_address"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_starting"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@+id/ib_change">
+
+            <TextView
+                android:id="@+id/tv_starting_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_choose_starting"
+                android:text="出发城市"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_starting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_starting_text"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_starting_text"
+                android:text="北京"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_choose_starting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_starting_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignLeft="@+id/rl_starting"
+            android:layout_alignRight="@+id/rl_starting"
+            android:layout_below="@+id/rl_starting"
+            android:layout_marginTop="10dp"
+            android:background="#333333" />
+
+        <RelativeLayout
+            android:id="@+id/rl_ending"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/rl_starting"
+            android:layout_below="@+id/tv_starting_line"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@+id/ib_change">
+
+            <TextView
+                android:id="@+id/tv_ending_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/iv_choose_ending"
+                android:text="到达城市"
+                android:textColor="@color/red"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_ending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_ending_text"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_ending_text"
+                android:text="北京"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/iv_choose_ending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/back" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_ending_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_alignLeft="@+id/rl_ending"
+            android:layout_alignRight="@+id/rl_ending"
+            android:layout_below="@+id/rl_ending"
+            android:layout_marginTop="10dp"
+            android:background="#333333" />
+
+        <ImageButton
+            android:id="@+id/ib_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/back" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_date"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rl_address"
+        android:layout_below="@+id/rl_address"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="30dp">
+
+        <TextView
+            android:id="@+id/tv_date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_date"
+            android:text="出发日期"
+            android:textColor="@color/red"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_date_text"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/tv_date_text"
+            android:text="往返机票"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/iv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/back" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_date_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_alignLeft="@+id/rl_date"
+        android:layout_alignRight="@+id/rl_date"
+        android:layout_below="@+id/rl_date"
+        android:layout_marginTop="10dp"
+        android:background="#333333" />
+
+    <ImageButton
+        android:id="@+id/ib_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_date_line"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_login_btn"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

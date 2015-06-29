@@ -14,16 +14,27 @@ import com.chanxa.wnb.view.ProgressDialogBuilder;
 import com.wtm.library.base.BaseFragment;
 
 /**
- * Created by wtm on 2014/12/12.
+ *
  */
 public class InternationalFragment extends BaseFragment implements View.OnClickListener {
 
     private ProgressDialog progressDialog;
+    private static InternationalFragment internationalFragment;
 
+    public InternationalFragment(){
+
+    }
+
+    public static InternationalFragment getInstance(){
+        if(internationalFragment == null){
+            internationalFragment = new InternationalFragment();
+        }
+        return  internationalFragment;
+    }
     @Override
     protected View inflaterView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         progressDialog = ProgressDialogBuilder.builderDialog(getActivity());
-        return inflater.inflate(R.layout.fragment_home_content, null, false);
+        return inflater.inflate(R.layout.fragment_airticket_international, null, false);
     }
 
     @Override

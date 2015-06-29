@@ -323,6 +323,11 @@
             android:screenOrientation="portrait"
             android:launchMode="singleTask">
         </activity>
+        <activity
+            android:name=".activity.airticket.CalendarActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask">
+        </activity>
         <!-- 火车票 -->
         <!-- 酒店预订 -->
     </application>
