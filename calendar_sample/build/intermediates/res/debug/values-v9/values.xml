@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/work/GitHub/myGit/BaseLibrary1/calendar_sample/build/intermediates/exploded-aar/BaseLibrary1/library_calendar/unspecified/res/values-v9/values.xml -->
+    <eat-comment/>
+    <string name="month_name_format">LLLL yyyy</string>
+</resources>
